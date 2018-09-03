@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<style>
+    h4 { text-align: center; }
+    div { padding: 10px; }
+    .flash-notice { margin: 5px; background-color: #BDFFB0; }
+    .flash-error { margin: 5px; background-color: #FFB0B0; }
+</style>
+{% for message in app.session.flashBag.get('error') %}
+    <div class="flash-error">
+        {{ message }}
+    </div>
+{% endfor %}
+{% for message in app.session.flashBag.get('notice') %}
+	<div class="flash-notice">
+		{{ message }}
+	</div>
+{% endfor %}
+<div class="example-wrapper">
+    <h4>Select or drag and drop the xml file you want to upload, then click save.</h4>
+
+    <p>
+    	{{ form_start(form) }}
+    	{{ form_end(form) }}
+    </p>
+</div>
+{% endblock %}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productError type="car">
+	<name>Fusca</name>
+	<brand>Volkswagen</brand>
+	<color>Branco</color>
+	<year>1970</year>
+</productError>
