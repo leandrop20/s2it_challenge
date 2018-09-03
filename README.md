@@ -16,15 +16,17 @@ This project require Composer, Symfony 2.8 and mysql db
 
 2. go to path/your/project
 
-3. composer install
+3. $ composer install
 
 4. configure the database
-	#app/config/parameters.yml
-	parameters:
-		database_host:		localhost
-		database_name:		s2it_test
-		database_user:		root
-		database_password:	
+```
+#app/config/parameters.yml
+parameters:
+	database_host:		localhost
+	database_name:		s2it_test
+	database_user:		root
+	database_password:	
+```
 
 5. run a mysql service
 
